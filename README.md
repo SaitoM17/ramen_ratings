@@ -28,10 +28,14 @@ El objetivo de este proyecto es [objetivo general del análisis], con el fin de 
 
 El conjunto de datos utilizado contiene las siguientes columnas:
 
-- `NombreColumna1`: [Descripción]
-- `NombreColumna2`: [Descripción]
-- `NombreColumna3`: [Descripción]
-- `...`
+- `Review`: Id 
+- `Brand (Marca)`: Nombre del Ramen
+- `Variety (Variedad)`: Nombre del Ramen
+- `Style (Estilo)`: Presentación
+- `Country (País)`: País donde se prepara
+- `Stars (Estrellas)`: Calidad del ramen (Escala de 5 puntos)
+- `Top Ten (Los diez mejores)`: Columna Vacia
+
 
 Fuente: [Nombre de la fuente o “datos simulados/ficticios”].
 
