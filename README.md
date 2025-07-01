@@ -1,26 +1,31 @@
 # 📊 Ramen Ratings
-# Analisis de Ramen (Identificación de los mejores)
+# Analisis de Ramen (Ramen Ratings Dashboard - Power BI)
 
-Este proyecto realiza un análisis [exploratorio / predictivo / descriptivo] de [tema del proyecto]. El conjunto de datos incluye información sobre [breve descripción del contenido del dataset].
+Este proyecto presenta un dashboard interactivo basado en más de 2500 reseñas de productos de ramen a nivel internacional, recopiladas por [Aleksey Bilogur (Owner)](https://www.kaggle.com/datasets/residentmario/ramen-ratings).
 
 ---
 
 ## 📚 Tabla de Contenidos
 
-- [🎯 Propósito](#propósito)
-- [📦 Conjunto de Datos](#conjunto-de-datos)
-- [🧪 Pasos del Proyecto](#pasos-del-proyecto)
-- [🛠️ Tecnologías](#tecnologías)
-- [⚙️ Instalación](#instalación)
-- [🚀 Uso](#uso)
-- [📈 Conclusiones y Recomendaciones](#conclusiones-y-recomendaciones)
-- [👤 Autores](#autores)
+- [🎯 Propósito](#-propósito)
+- [📦 Conjunto de Datos](#-conjunto-de-datos)
+- [🛠️ Tecnologías](#️-tecnologías)
+- [📌 Vista previa del dashboard](#-vista-previa-del-dashboard)
+- [💡 Insight clave](#-insight-clave)
+- [📂 Archivos principales](#-archivos-principales)
+- [🧠 Lecciones aprendidas](#-lecciones-aprendidas)
+- [👤 Autor](#-autor)
+- [📝 Licencia](#-licencia)
 
 ---
 
 ## 🎯 Propósito
 
-El objetivo de este proyecto es [objetivo general del análisis], con el fin de [impacto esperado, decisiones que se tomarán, etc.].
+Visualizar y analizar las calificaciones de ramen para identificar:
+- Las marcas mejor calificadas
+- El estilo de empaque con mejores evaluaciones
+- Los países con mayores promedios de estrellas
+- Productos destacados de 2012 a 2016
 
 ---
 
@@ -34,97 +39,52 @@ El conjunto de datos utilizado contiene las siguientes columnas:
 - `Style (Estilo)`: Presentación
 - `Country (País)`: País donde se prepara
 - `Stars (Estrellas)`: Calidad del ramen (Escala de 5 puntos)
-- `Top Ten (Los diez mejores)`: Columna Vacia
+- `Top Ten (Los diez mejores)`: Columna con el Top 10 de los mejores ramens del 2012 - 2016
 
 
 Fuente: [Nombre de la fuente o “datos simulados/ficticios”].
 
 ---
 
-## 🧪 Pasos del Proyecto
-
-1. **Carga y exploración inicial de los datos**:
-   - Exploración básica con `.head()`, `.info()`, `.describe()`, etc.
-
-2. **Limpieza y preprocesamiento**:
-   - Manejo de valores nulos, duplicados, formatos y conversiones de fechas.
-
-3. **Análisis exploratorio de datos (EDA)**:
-   - [Ej. Distribución, correlaciones, agrupaciones, etc.]
-
-4. **Visualización de datos**:
-   - Uso de gráficos de barras, líneas, cajas, dispersión y mapas de calor.
-
-5. **Modelado o reportes (opcional)**:
-   - [Si aplica: modelos de ML, clustering, predicciones, etc.]
-
-6. **Conclusiones y recomendaciones**:
-   - Síntesis de hallazgos clave y propuestas de acción.
-
----
-
 ## 🛠️ Tecnologías
 
-- Python
-- Pandas
-- Matplotlib
-- Seaborn
-- Jupyter Notebook / Google Colab
-- [Otras herramientas que uses, como Scikit-learn, Plotly, etc.]
+- **Power BI** – Visualización de datos
+- **Microsoft Excel** – Limpieza de datos
+- **DAX** – Cálculos de promedio y filtros
+- **Kaggle** – Fuente del dataset original
 
 ---
 
-## ⚙️ Instalación
+## 📌 Vista previa del dashboard
 
-### 1. Clonar este repositorio:
-```bash
-git clone https://github.com/tu_usuario/nombre_del_proyecto.git
-```
-### 2. Uso de un Entorno Virtual para Aislar Dependencias
+![Dashboard Preview](reports/figures/Dashboard_ramen_ratings.png)
 
-Para evitar conflictos con versiones de librerías, se recomienda usar entornos virtuales.
+## 💡 Insight clave
 
-####  Crear y Activar un Entorno Virtual
+> Aunque **Nissin** es la marca con más productos evaluados (368), **MyKuali** es la mejor calificada con un promedio de ⭐ 4.95 estrellas entre 22 productos.
 
-##### Crear el entorno virtual:
-```
-python -m venv venv
-```
-##### Activar el entorno:
-* #### En Windows:
-
-    ```
-    venv\Scripts\activate
-    ```
-
-* #### En Mac/Linux::
-
-    ```
-    source venv/bin/activate
-    ```
-#### 3. Instalar dependencias dentro del entorno:
-* #### Opición 1:
-    ```
-    pip install -r requirements.txt
-    ```
-
-* #### Opción 2 (De forma manual):
-    ```
-    pip install numpy pandas matplotlib seaborn scikit-learn
-    ```
 ---
 
-## 📈 Conclusiones y Recomendaciones
+## 📂 Archivos principales
 
-- [Insight 1]
-- [Insight 2]
-- [Recomendación práctica o estratégica basada en los datos]
+- [`ramen_dashboard.pdf`](reports/Dashboard_ramen_rantings.pdf): Visualización final en PDF
+- [`ramen-ratings.xlsx`](data/processed/ramen_ratings_limpio.xlsx): Datos limpios para replicar el análisis
+
+---
+
+## 🧠 Lecciones aprendidas
+
+- Cómo aplicar filtros efectivos (por volumen de productos) para evitar sesgos.
+- Cómo destacar insights narrativos que expliquen el valor del análisis.
+- Uso de Power BI para presentar dashboards listos para ejecutivos.
 
 ---
 
 ## 👤 Autor
 
-**Said Mariano Sánchez** – *smariano170@gmail.com*  
+**Said Mariano Sánchez** –  📧 *smariano170@gmail.com*  
+*Analista de Datos Jr. | Visualización | Power BI | Python | SQL*  
+🌎 México  
 Este proyecto forma parte de mi portafolio como analista de datos Jr.
 
 ---
